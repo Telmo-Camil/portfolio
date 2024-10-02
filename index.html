@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navigation -->
+  <nav class="bg-gray-800 p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Mon Portfolio</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#about" class="hover:text-gray-400">À propos</a></li>
+        <li><a href="#projects" class="hover:text-gray-400">Projets</a></li>
+        <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Section À propos -->
+  <section id="about" class="bg-white py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-800">À propos de moi</h2>
+      <p class="text-gray-600 mt-4">Je suis un développeur web passionné avec une forte expérience dans la création de sites web modernes et réactifs.</p>
+      <img src="https://via.placeholder.com/150" alt="Photo de moi" class="rounded-full mx-auto mt-8 shadow-lg">
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projects" class="bg-gray-100 py-20">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center text-gray-800">Mes Projets</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        <!-- Project 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/600x400" alt="Projet 1" class="w-full">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-800">Projet 1</h3>
+            <p class="text-gray-600 mt-2">Description du projet avec les technologies utilisées.</p>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/600x400" alt="Projet 2" class="w-full">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-800">Projet 2</h3>
+            <p class="text-gray-600 mt-2">Description du projet avec les technologies utilisées.</p>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://via.placeholder.com/600x400" alt="Projet 3" class="w-full">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-800">Projet 3</h3>
+            <p class="text-gray-600 mt-2">Description du projet avec les technologies utilisées.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="bg-white py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-gray-800">Contactez-moi</h2>
+      <p class="text-gray-600 mt-4">Vous avez un projet ou une question ? N'hésitez pas à me contacter.</p>
+      <form action="#" method="POST" class="mt-8">
+        <div class="flex flex-col md:flex-row md:space-x-4">
+          <input type="text" name="name" placeholder="Nom" class="bg-gray-100 p-4 w-full rounded-md mb-4 md:mb-0" required>
+          <input type="email" name="email" placeholder="Email" class="bg-gray-100 p-4 w-full rounded-md" required>
+        </div>
+        <textarea name="message" placeholder="Votre message" class="bg-gray-100 p-4 w-full rounded-md mt-4" required></textarea>
+        <button type="submit" class="bg-gray-800 text-white py-3 px-6 rounded-md mt-4 hover:bg-gray-700">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+  </
+
